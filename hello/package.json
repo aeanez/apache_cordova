@@ -19,7 +19,8 @@
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-network-information": {}
     },
     "platforms": [
       "ios",
