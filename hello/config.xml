@@ -7,6 +7,14 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
+    <preference name="android-targetSdkVersion" value="27" />
+    <!-- <edit-config 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        file="app/src/main/AndroidManifest.xml" 
+        mode="merge" 
+        target="/manifest/application"> 
+        <application android:usesCleartextTraffic="true" />         
+    </edit-config> -->
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
