@@ -45,7 +45,7 @@ On config.xml update the version:
 
 On config.xml add:
 
-`<preference name="android-targetSdkVersion" value="27" />`
+`<preference name="android-targetSdkVersion" value="30" />`
 
 ### net::ERR_BLOCKED_BY_CLIENT
 
