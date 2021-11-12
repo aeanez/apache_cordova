@@ -22,10 +22,22 @@ Java SDK 1.8 (Download & install the latest)
 Android Studio (Download & install the latest)
 [Gradle](https://gradle.org/releases/) (Download the latest)
 
-## Build the app
+## Build the app (only to generate a debug APK)
 `$ cordova build android `
+
+## Create a keystore to sign the app
+`keytool -genkey -v -keystore ./my.keystore -alias CordovaRelease -keyalg RSA -keysize 2048 -validity 10000`
+
+[Stackoverflow reference](https://stackoverflow.com/questions/44733068/android-app-sign-in-cordova)
+
+## Build the app signed as .aab file
+`cordova run android --prod --release -- --keystore=../my-release-key.keystore --storePassword=password --alias=alias_name --password=password --packageType=bundle`
 # Troubleshooting resourses
 
+### Version code XXXXX has already been used. Try another version code.
+On config.xml update the version:
+
+`<widget id="XXX.XXXXXXXX.xXXXX" version="1.X.X" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">`
 ### net::ERR_CLEARTEXT_NOT_PERMITTED
 
 On config.xml add:
