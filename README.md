@@ -32,6 +32,9 @@ Android Studio (Download & install the latest)
 
 ## Build the app signed as .aab file
 `cordova run android --prod --release -- --keystore=../my-release-key.keystore --storePassword=password --alias=alias_name --password=password --packageType=bundle`
+
+## How to upload the .aab or .apk file to Google Play
+[Youtube Video](https://www.youtube.com/watch?v=5GHT4QtotE4)
 # Troubleshooting resourses
 
 ### Version code XXXXX has already been used. Try another version code.
